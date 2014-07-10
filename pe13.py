@@ -106,8 +106,15 @@ s='''37107287533902102798797998220837590246510135740250
 
 s=s.split('\n')
 
+import time
+
+start = time.clock()
+
+
+
 
 print str(sum(int(s[i]) for i in range(100)))[:10]
 
-
+elapsed = (time.clock() - start)
+print("Time used:",elapsed)
 
